@@ -50,9 +50,14 @@ const initialValues = eventDefaultValues
         console.log(values)
       }
 
+      
+
+      
+
   return (
     <Form {...form}>
-    <form onSubmit={form.handleSubmit(onSubmit)} className="flex flex-col gap-5">
+       {/* /uncomment these line which are comment */}
+    <form /*onSubmit={form.handleSubmit(onSubmit)}*/ className="flex flex-col gap-5">
     <div className="flex flex-col gap-5 md:flex-row">
           <FormField
             control={form.control}
@@ -72,7 +77,8 @@ const initialValues = eventDefaultValues
             render={({ field }) => (
               <FormItem className="w-full">
                 <FormControl>
-                  <Dropdown onChangeHandler={field.onChange} value={field.value} />
+                  {/* /uncomment these line which are comment */}
+                  <Dropdown /*onChangeHandler={field.onChange} value={field.value} *//>
                 </FormControl>
                 <FormMessage />
               </FormItem>
