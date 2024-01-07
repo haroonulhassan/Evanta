@@ -2,7 +2,7 @@
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { Button } from "@/components/ui/button"
-import Dropdown from "./dropDown"
+import Dropdown from "./Dropdown"
 import {
   Form,
   FormControl,
